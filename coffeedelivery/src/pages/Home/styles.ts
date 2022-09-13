@@ -72,6 +72,7 @@ export const AdvantagesContainer = styled.div`
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5rem;
+        white-space: nowrap;
         color: ${props => props.theme["gray-600"]};
     }
 
@@ -107,4 +108,39 @@ export const AdvantagesContainer = styled.div`
         background-color: ${props => props.theme["purple-500"]};
         color: ${props => props.theme.white};
     }
+`;
+
+export const CoffeeList = styled.main`
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+
+    header{
+        display: flex;
+        align-items: center;
+
+        width: 12rem;
+        height: 2.5rem;
+
+        margin-left: 10rem;
+        margin-top: 2rem;
+
+        font-family: 'Baloo 2', cursive;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 130%;
+        white-space: nowrap;
+        color: ${props => props.theme["gray-700"]};
+    }
+`;
+
+export const CoffeeMenu = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 8rem;
+    margin-left: 10rem;
 `;
