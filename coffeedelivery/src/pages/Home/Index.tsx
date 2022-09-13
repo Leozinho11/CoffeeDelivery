@@ -1,6 +1,7 @@
 import { Package, ShoppingCart, Timer, Coffee } from 'phosphor-react'
 import CoffeeCup from '../../assets/CoffeeCup.svg'
-import { AdvantagesContainer, CoffeeContainer, CoffeeImg, ContainerText } from './styles'
+import { Card } from '../../Components/Cards/Index'
+import { AdvantagesContainer, CoffeeContainer, CoffeeImg, CoffeeList, CoffeeMenu, ContainerText } from './styles'
 
 export function Home(){
     return(
@@ -18,6 +19,13 @@ export function Home(){
                 <p className='TimerIcon'><Timer weight='fill'/>Entrega Rápida e rastreada</p>
                 <p className='CoffeeIcon'><Coffee weight='fill'/>O café chega fresquinho até você</p>
             </AdvantagesContainer>
+
+            <CoffeeList>
+                <header>Nossos cafés</header>
+                <CoffeeMenu>
+                    <Card />
+                </CoffeeMenu>
+            </CoffeeList>
         </CoffeeContainer>
     )
 }
