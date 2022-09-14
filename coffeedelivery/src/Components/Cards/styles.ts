@@ -76,17 +76,25 @@ export const CardSubtitle = styled.p`
 export const PriceContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
 
+    width: 13rem;
     height: 2rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 `;
 
 export const PriceText = styled.p`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.25rem;
+
     width: 4rem;
     height: 2rem;
 
@@ -98,10 +106,23 @@ export const PriceText = styled.p`
     color: ${props => props.theme["gray-600"]};
 
     span{
+
         font-family: 'Baloo 2', cursive;
         font-weight: 800;
         font-size: 1.5rem;
     }
+`;
+
+export const CardButtonContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+    width: 7.5rem;
+    height: 2.5rem;
+
+    margin-left: 0.5rem;
 `;
 
 export const Counter = styled.div`
@@ -111,6 +132,7 @@ export const Counter = styled.div`
     align-items: center;
     padding: 0.5rem;
     gap: 0.25rem;
+    
 
     width: 4.5rem;
     height: 2.5rem;
@@ -146,4 +168,10 @@ export const CartButton = styled.button`
 
     border: none;
     border-radius: 6px;
+
+    transition: background-color 0.1s;
+
+    &:hover{
+        background: ${props => props.theme["purple-500"]};
+    }
 `;
