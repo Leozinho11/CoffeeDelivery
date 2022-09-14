@@ -24,6 +24,13 @@ export function Home(){
                 <header>Nossos cafés</header>
                 <CoffeeMenu>
                     <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
                 </CoffeeMenu>
             </CoffeeList>
         </CoffeeContainer>

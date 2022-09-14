@@ -59,6 +59,7 @@ export const AdvantagesContainer = styled.div`
     gap: 1rem;
 
     margin-left: 10rem;
+    margin-top: 4rem;
 
     p{
         display: flex;
@@ -140,7 +141,11 @@ export const CoffeeMenu = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
-    margin-top: 8rem;
+    gap: 2rem;
+
+    margin-top: 3.5rem;
     margin-left: 10rem;
+    margin-right: 10rem;
 `;
