@@ -145,7 +145,5 @@ export const CoffeeMenu = styled.div`
 
     gap: 2rem;
 
-    margin-top: 3.5rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin: 3.5rem 10rem;
 `;
