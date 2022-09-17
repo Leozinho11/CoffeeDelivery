@@ -10,12 +10,12 @@ export function Header(){
 
             <nav>
             
-            <NavLink to='' title='Local' className='localeIcon'>
+            <NavLink to='/' title='Local' className='localeIcon'>
                 <MapPin size={24} weight='fill' />
                 São Paulo, SP
             </NavLink>
 
-            <NavLink to='' title='Carrinho de Compras' className='shoppingCart'>
+            <NavLink to='/checkout' title='Carrinho de Compras' className='shoppingCart'>
                 <ShoppingCart size={24} weight="fill" />
             </NavLink>
 

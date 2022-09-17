@@ -32,6 +32,18 @@ export const HeaderConteiner = styled.div`
             border-radius: 6px;
 
             text-decoration: none;
+
+            transition: background-color 0.1s;
+
+            &:hover{
+                background: ${props => props.theme["purple-500"]};
+                color: ${props => props.theme.white};
+
+                svg{
+                    color: ${props => props.theme.white};
+                }
+            }
+            
         }
 
         .shoppingCart{
