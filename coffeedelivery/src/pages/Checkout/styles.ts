@@ -16,7 +16,6 @@ export const CheckoutTitles = styled.p`
     height: 1.5rem;
 
     margin-top: 2.5rem;
-    margin-bottom: 1rem;
 
     font-family: 'Baloo 2', cursive;
     font-style: normal;
@@ -28,21 +27,25 @@ export const CheckoutTitles = styled.p`
     color: ${props => props.theme["gray-700"]};
 `;
 
-export const CompleteFormText = styled(CheckoutTitles)`
-    margin-left: 10rem;
-`;
 
-export const CheckoutForm = styled.div`
+export const CheckoutForm = styled.form`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 0.75rem;
+    gap: 2rem;
 
     width: 40rem;
     height: 37rem;
 
     margin-left: 10rem;
+    margin-bottom: 3rem;
+`;
 
+export const InfosContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
 `;
 
 export const AddressForm = styled.div`
@@ -259,4 +262,29 @@ export const PaymentWay = styled.button`
         background: ${props => props.theme["purple-100"]};
         border: 1px solid ${props => props.theme["purple-500"]};
     }
+`;
+
+export const FinishedContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+`;
+
+
+export const SelectedCoffeesContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem;
+    gap: 1.5rem;
+
+    width: 28rem;
+    height: 31rem;
+
+    margin-left: 2rem;
+ 
+
+    background: ${props => props.theme["gray-100"]};
+    border-radius: 6px 44px;
 `;
