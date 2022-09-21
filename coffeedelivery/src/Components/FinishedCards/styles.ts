@@ -11,7 +11,7 @@ export const CheckoutCardContainer = styled.div`
     background: ${props => props.theme["gray-100"]};
 `;
 
-export const CheckoutCardInfo = styled.div`
+export const CheckoutCardInfoContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,6 +24,36 @@ export const CheckoutCardInfo = styled.div`
         width: 4rem;
         height: 4rem;
     }
+`;
+
+export const CheckoutCardInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    width: 10.5rem;
+    height: 4rem;
+`;
+
+export const CheckoutCardText = styled.p`
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    line-height: 1.25rem;
+
+    color: ${props => props.theme["gray-700"]};
+`;
+
+export const CheckoutCardButtonsContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+    width: 10.5rem;
+    height: 2rem;
 `;
 
 export const CheckoutCardCounter = styled.div`
@@ -54,4 +84,48 @@ export const CheckoutCardCounter = styled.div`
             color: ${props => props.theme["purple-700"]};
         }
     }
+`;
+
+export const CheckoutCardRemoveButton = styled.button`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    gap: 0.25rem;
+
+    height: 2rem;
+
+    background: ${props => props.theme["gray-300"]};
+    border: none;
+    border-radius: 6px;
+
+    svg{
+        color: ${props => props.theme["purple-500"]};
+    }
+
+    p{
+        font-weight: 400;
+        line-height: 1.25rem;
+        text-transform: uppercase;
+
+        color: ${props => props.theme["gray-600"]};
+    }
+
+    &:hover{
+        background: ${props => props.theme["gray-400"]};
+    }
+`;
+
+export const CheckoutCardPrice = styled.div`
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    white-space: nowrap;
+
+    color: ${props => props.theme["gray-600"]};
 `;
