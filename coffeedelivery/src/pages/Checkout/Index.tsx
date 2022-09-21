@@ -1,6 +1,6 @@
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "phosphor-react";
 import { CheckoutCard } from "../../Components/FinishedCards/Index";
-import { AddressForm, CheckoutContainer, CheckoutForm, CheckoutTitles, FinishedContainer, FormInput, InfosContainer, PaymentContainer, PaymentWay, PaymentWayContainer, SelectedCoffeesContainer } from "./styles";
+import { AddressForm, CheckoutContainer, CheckoutForm, CheckoutTitles, FinishedContainer, FinishedPrices, FormInput, InfosContainer, PaymentContainer, PaymentWay, PaymentWayContainer, SelectedCoffeesContainer } from "./styles";
 
 export function Checkout (){
     return(
@@ -46,10 +46,13 @@ export function Checkout (){
                     <CheckoutTitles>Cafés Selecionados</CheckoutTitles>
                     <SelectedCoffeesContainer>
                         <CheckoutCard />
+
+                        <FinishedPrices>
+                            Total de itens
+                            <span>R$ 29,70</span>
+                        </FinishedPrices>
                     </SelectedCoffeesContainer>
                 </FinishedContainer>
-                    
-
             </CheckoutForm>
         </CheckoutContainer>
     )

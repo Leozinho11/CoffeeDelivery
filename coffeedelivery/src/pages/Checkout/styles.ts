@@ -279,12 +279,43 @@ export const SelectedCoffeesContainer = styled.div`
     padding: 2.5rem;
     gap: 1.5rem;
 
-    width: 28rem;
-    height: 31rem;
+    /* width: 28rem;
+    height: 31rem; */
 
     margin-left: 2rem;
  
 
     background: ${props => props.theme["gray-100"]};
     border-radius: 6px 44px;
+`;
+
+export const FinishedPricesContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 1rem;
+`;
+
+export const FinishedPrices = styled.p`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    
+    text-align: right;
+
+    color: ${props => props.theme["gray-600"]};
+`;
+
+export const TotalPrice = styled(FinishedPrices)`
+    font-weight: 700;
+
+    color: ${props => props.theme["gray-700"]};
+`;
+
+export const FinishedButton = styled.button`
+
 `;
