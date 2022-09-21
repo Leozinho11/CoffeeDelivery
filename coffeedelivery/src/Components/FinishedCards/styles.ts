@@ -128,4 +128,6 @@ export const CheckoutCardPrice = styled.div`
     white-space: nowrap;
 
     color: ${props => props.theme["gray-600"]};
+
+    margin-bottom: 3rem;
 `;
