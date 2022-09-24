@@ -1,12 +1,12 @@
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "phosphor-react";
 import { CheckoutCard } from "../../Components/FinishedCards/Index";
-import { AddressForm, CheckoutContainer, CheckoutForm, CheckoutTitles, FinishedContainer, FinishedPrices, FormInput, InfosContainer, PaymentContainer, PaymentWay, PaymentWayContainer, SelectedCoffeesContainer } from "./styles";
+import { AddressForm, CheckoutContainer, CheckoutForm, CheckoutTitles, DeliveryPrice, FinishedButton, FinishedContainer, FinishedPrices, FormInput, InfosContainer, PaymentContainer, PaymentWay, PaymentWayContainer, SelectedCoffeesContainer, TotalPrice } from "./styles";
 
 export function Checkout (){
     return(
         <CheckoutContainer>
             
-                <CheckoutForm action="" name="Checkout" >
+                <CheckoutForm  name="Checkout" >
                 <InfosContainer>
                     <CheckoutTitles>Complete seu pedido</CheckoutTitles>
                     <AddressForm>
@@ -17,13 +17,13 @@ export function Checkout (){
                         </section>
 
                         <FormInput>
-                            <input type="text" className="CEP" placeholder="CEP"/>
-                            <input type="text" className="Rua" placeholder="Rua"/>
-                            <input type="text" className="Número" placeholder="Número"/>
-                            <input type="text" className="Complemento" placeholder="Complemento"/>
-                            <input type="text" className="Bairro" placeholder="Bairro"/>
-                            <input type="text" className="Cidade" placeholder="Cidade"/>
-                            <input type="text" className="UF" placeholder="UF"/>
+                            <input type="text" required className="CEP" placeholder="CEP"/>
+                            <input type="text" required className="Rua" placeholder="Rua"/>
+                            <input type="text" required className="Número" placeholder="Número"/>
+                            <input type="text" required className="Complemento" placeholder="Complemento"/>
+                            <input type="text" required className="Bairro" placeholder="Bairro"/>
+                            <input type="text" required className="Cidade" placeholder="Cidade"/>
+                            <input type="text" required className="UF" placeholder="UF"/>
                         </FormInput>
                     </AddressForm>
 
@@ -49,8 +49,22 @@ export function Checkout (){
 
                         <FinishedPrices>
                             Total de itens
-                            <span>R$ 29,70</span>
+                            <span>R$ 9,90</span>
                         </FinishedPrices>
+
+                        <DeliveryPrice>
+                            Entrega
+                            <span>R$ 3,50</span>
+                        </DeliveryPrice>
+
+                        <TotalPrice>
+                            Total
+                            <span>R$ 13,40</span>
+                        </TotalPrice>
+
+                        <FinishedButton type="submit">
+                            Confirmar Pedido
+                        </FinishedButton>
                     </SelectedCoffeesContainer>
                 </FinishedContainer>
             </CheckoutForm>
