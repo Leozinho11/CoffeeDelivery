@@ -171,7 +171,6 @@ export const PaymentContainer = styled.div`
     background: ${props => props.theme["gray-100"]};
     border-radius: 6px;
 
-    margin-top: 1rem;
     margin-bottom: 3rem;
 
     section{
@@ -303,19 +302,45 @@ export const FinishedPrices = styled.p`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
+    gap: 14rem;
     
     text-align: right;
+    white-space: nowrap;
 
     color: ${props => props.theme["gray-600"]};
 `;
 
-export const TotalPrice = styled(FinishedPrices)`
-    font-weight: 700;
+export const DeliveryPrice = styled(FinishedPrices)`
+    gap: 16.5rem;
+`;
 
+export const TotalPrice = styled(FinishedPrices)`
+    font-size: 1.25rem;
+    font-weight: 700;
+    gap: 15.5rem;
     color: ${props => props.theme["gray-700"]};
 `;
 
 export const FinishedButton = styled.button`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+    padding: 0.75rem 0.5rem;
+    gap: 0.25rem;
+
+    width: 23rem;
+
+    background: ${props => props.theme["yellow-500"]};
+    color: ${props => props.theme.white};
+
+    border: none;
+    border-radius: 6px;
+
+    transition: background-color 0.2s;
+
+    &:hover{
+        background: ${props => props.theme["yellow-700"]};
+    }
 `;

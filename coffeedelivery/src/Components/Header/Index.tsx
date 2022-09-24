@@ -6,11 +6,13 @@ import { HeaderConteiner } from './styles'
 export function Header(){
     return(
         <HeaderConteiner>
+            <NavLink to='/'>
             <img src={CoffeeLogo} alt="" />
+            </NavLink>
 
             <nav>
             
-            <NavLink to='/' title='Local' className='localeIcon'>
+            <NavLink to='/done' title='Local' className='localeIcon'>
                 <MapPin size={24} weight='fill' />
                 São Paulo, SP
             </NavLink>

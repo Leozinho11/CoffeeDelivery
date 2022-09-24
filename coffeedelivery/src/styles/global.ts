@@ -23,4 +23,8 @@ body, input, textarea, button{
     font-size: 1rem;
 }
 
+button{
+    cursor: pointer;
+}
+
 `;
