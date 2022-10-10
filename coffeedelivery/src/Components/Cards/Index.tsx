@@ -2,7 +2,11 @@ import { CardButtonContainer, CardContainer, CardSubtitle, CardTitle, CartButton
 import Expresso from '../../images/Expresso.svg'
 import { Minus, Plus, ShoppingCartSimple } from "phosphor-react";
 
-export function Card(){
+
+interface CardProps{
+    image: string
+}
+export function Card({image}: CardProps){
     return(
         <CardContainer>
             <img src={Expresso} alt="Café expresso" />
