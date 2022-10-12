@@ -1,21 +1,23 @@
 import { CardButtonContainer, CardContainer, CardSubtitle, CardTitle, CartButton, Counter, PriceContainer, PriceText, TagStyle } from "./styles";
-import Expresso from '../../images/Expresso.svg'
 import { Minus, Plus, ShoppingCartSimple } from "phosphor-react";
 
 
 interface CardProps{
-    image: string
+    image: string,
+    CoffeeName: string,
+    CoffeeDescripiton: string,
+    Price: string
 }
-export function Card({image}: CardProps){
+export function Card({image, CoffeeDescripiton, CoffeeName, Price}: CardProps){
     return(
         <CardContainer>
-            <img src={Expresso} alt="Café expresso" />
+            <img src={image} alt="" />
             <TagStyle>Tradicional</TagStyle>
-            <CardTitle>Expresso Americano</CardTitle>
-            <CardSubtitle>O tradicional café feito com água quente e grãos moídos</CardSubtitle>
+            <CardTitle>{CoffeeName}</CardTitle>
+            <CardSubtitle>{CoffeeDescripiton}</CardSubtitle>
 
             <PriceContainer>
-                <PriceText>R$ <span>9,90</span></PriceText>
+                <PriceText>R$ <span>{Price}</span></PriceText>
                 <CardButtonContainer>
                     <Counter>
                         <button>
