@@ -2,6 +2,7 @@ import { Package, ShoppingCart, Timer, Coffee } from 'phosphor-react'
 import CoffeeCup from '../../assets/CoffeeCup.svg'
 import { Card } from '../../Components/Cards/Index'
 import { AdvantagesContainer, CoffeeContainer, CoffeeImg, CoffeeList, CoffeeMenu, ContainerText } from './styles'
+import Expresso from '../../images/Expresso.svg';
 
 export function Home(){
     return(
@@ -23,14 +24,7 @@ export function Home(){
             <CoffeeList>
                 <header>Nossos cafés</header>
                 <CoffeeMenu>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    <Card image={Expresso} CoffeeName={'Expresso'} CoffeeDescripiton={'Café padrão'} Price={'9,90'} />
                 </CoffeeMenu>
             </CoffeeList>
         </CoffeeContainer>
