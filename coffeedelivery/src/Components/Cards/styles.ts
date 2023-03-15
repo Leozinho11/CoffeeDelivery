@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
     }
 `;
 
-export const TagStyle = styled.p`
+export const TagContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -24,7 +24,7 @@ export function Home(){
             <CoffeeList>
                 <header>Nossos cafés</header>
                 <CoffeeMenu>
-                    <Card image={Expresso} CoffeeName={'Expresso'} CoffeeDescripiton={'Café padrão'} Price={'9,90'} />
+                    <Card image={Expresso} TagText={'Tradicional'} CoffeeName={'Expresso'} CoffeeDescripiton={'Café padrão'} Price={'9,90'} />
                 </CoffeeMenu>
             </CoffeeList>
         </CoffeeContainer>
