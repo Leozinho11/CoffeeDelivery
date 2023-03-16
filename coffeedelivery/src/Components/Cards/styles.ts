@@ -6,6 +6,7 @@ export const CardContainer = styled.div`
 
     background-color: ${props => props.theme["gray-100"]};
     border-radius: 6px 36px;
+    
 
     img{
         margin-top: -1.25rem;
@@ -21,22 +22,9 @@ export const TagContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.25rem;
-
-    width: 5rem;
-    height: 1rem;
-
-    margin-left: 5.5rem;
-    margin-top: 0ch;
-
-    background: ${props => props.theme["yellow-100"]};
-    border-radius: 100px;
-
-    font-weight: 700;
-    font-size: 0.6rem;
-    line-height: 130%;
-    text-transform: uppercase;
-    color: ${props => props.theme["yellow-700"]};
+    padding: 0px;
+    gap: 4px;
+    
 `;
 
 export const CardTitle = styled.p`

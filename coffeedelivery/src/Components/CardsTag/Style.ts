@@ -5,13 +5,12 @@ export const TagsContainerStyle = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.25rem;
+    padding: 0px;
+    gap: 4px;
 
-    width: 5rem;
-    height: 1rem;
+    position: absolute;
 
-    margin-left: 5.5rem;
-    margin-top: 0ch;
+
 
     background: ${props => props.theme["yellow-100"]};
     border-radius: 100px;

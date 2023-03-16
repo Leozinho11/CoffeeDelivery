@@ -1,20 +1,24 @@
-import { CardButtonContainer, CardContainer, CardSubtitle, CardTitle, CartButton, Counter, PriceContainer, PriceText } from "./styles";
+import { CardButtonContainer, CardContainer, CardSubtitle, CardTitle, CartButton, Counter, PriceContainer, PriceText, TagContainer } from "../styles";
 import { Minus, Plus, ShoppingCartSimple } from "phosphor-react";
-import { CardsTags } from "../CardsTag/Index";
+import { CardsTags } from "../../CardsTag/Index";
 
 
-interface CardProps{
+interface CardProps {
     image: string,
-    TagText: string,
+    TagText1: string,
+    TagText2: string,
     CoffeeName: string,
     CoffeeDescripiton: string,
     Price: string
 }
-export function Card({image, TagText, CoffeeDescripiton, CoffeeName, Price}: CardProps){
-    return(
+export function CardWithTwoTags({ image, TagText1, TagText2, CoffeeDescripiton, CoffeeName, Price }: CardProps) {
+    return (
         <CardContainer>
             <img src={image} alt="" />
-            <CardsTags TagText={TagText}/>
+            <TagContainer>
+                <CardsTags TagText={TagText1} />
+                <CardsTags TagText={TagText2} />
+            </TagContainer>
             <CardTitle>{CoffeeName}</CardTitle>
             <CardSubtitle>{CoffeeDescripiton}</CardSubtitle>
 
@@ -34,7 +38,7 @@ export function Card({image, TagText, CoffeeDescripiton, CoffeeName, Price}: Car
                     </Counter>
 
                     <CartButton>
-                        <ShoppingCartSimple weight="fill" size={22}/>
+                        <ShoppingCartSimple weight="fill" size={22} />
                     </CartButton>
                 </CardButtonContainer>
             </PriceContainer>
